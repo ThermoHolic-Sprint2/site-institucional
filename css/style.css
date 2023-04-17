@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    background-color: #eaa638;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+/* Header*/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+}
+
+.navbar {
+    width: 700px;
+    display: flex;
+
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar li a:hover {
+    color: #FFC107;
+    transition: 0.5s;
+
+}
+
+/*Banner*/
+
+.banner {
+    margin-top: 170px;
+}
+
+.banner .container {
+    justify-content: space-around;
+}
+
+.texto-banner {
+    color: white;
+    width: 40%;
+
+}
+
+.texto-banner p {
+    font-size: 30px;
+}
+
+.texto-banner h1 {
+    font-size: 40px;
+}
+
+.texto-banner p span {
+    font-weight: 700;
+}
+
+.foto-banner {
+    width: 370px;
+    border-radius: 200px 200px 200px 200px;
+    margin: 30px;
+}
+
+.botao-banner {
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 60px;
+
+}
+
+.botao-banner:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+
+.botao-banner a {
+    color: black;
+    text-decoration: none;
+}
+/*banner2*/
+
+.banner2 .container {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+}
+
+.imagem-banner2 img{
+    width: 700px;
+    border-radius: 400px 0px 0px 400px;
+    margin: 20px 0px 20px 0px;
+}
+
+.botao-banner2 {
+    text-decoration: none;
+    color: #eaa638;
+    font-size: 20px;
+}
+.botao-banner2:hover {
+    text-decoration: underline;
+}
+
