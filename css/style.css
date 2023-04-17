@@ -138,3 +138,96 @@ body {
     text-decoration: underline;
 }
 
+/*Sobre Nos*/
+.sobre-nos .container {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.texto-sobre-nos h1{
+    text-align: center;
+    
+}
+.container .imagem-sobre-nos img {
+    width: 500px;
+    border-radius: 0px 400px 400px 0px;
+    margin: 20px 0px 20px 0px;
+}
+
+.container .texto-sobre-nos {
+    width: 65%;
+    margin: 10px 50px; /*10px - top/bottom 50px - left/right*/
+    font-family: Poppins;
+    color: #3b280a;
+    font-style: normal;
+    font-weight: 500; /*espeçura da letra*/
+    font-size: 18px; /*tam letra*/
+    line-height: 50px; /*espaçamento vertical entre as linhas do texto*/
+    text-align: justify;
+}
+
+/*Participantes*/
+.participantes .container {
+    justify-content: space-evenly;
+    width: auto;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 300px;
+}
+
+.card-participantes {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 200px;
+    text-align: center;
+}
+
+.img-participantes {
+    width: 150px;
+    border-radius: 300px;
+}
+
+
+/*Nossos Serviços*/
+.nossos-servicos .container {
+    background-color: #eaa638;
+}
+
+.nossos-servicos h1 {
+    color: white;
+}
+
+.nossos-servicos .container {
+    justify-content: space-around;
+    width: auto;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.card-servicos {
+    background-color: white;
+    padding: 40px;
+    width: 20%;
+    height: 200px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.card-servicos:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+
+.card-servicos h4 {
+    color: #eaa638;
+}
+
+.card-servicos span {
+    width: 100px;
+    text-align: center;
+}
