@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ThermoHolic</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Aqui colocamos o link para o arquivo de estilização-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <!-- Nosso cabeçalho -->
+    <div class="header-form">
+        <div class="container">
+            <img class="logo" src="img/logo_thermoholic.png" alt="">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre-nos">Sobre Nós</a></li>
+                <li><a href="index.html#participantes">Nossos Serviços</a></li>
+                <li><a href="calculadora.html">Simule Aqui</a></li>
+                <li><!--Espaço--></li>
+                <li>|</li>
+                <li><!--Espaço--></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form">
+        <div class="containerlogin">
+            <img class="img-cadastro" src="img/foto -cadastro.jpg" alt="">
+            <div class="texto-cadastro">
+                <h1>Cadastro</h1>
+                <h4>Dados da sua Empresa</h4>
+                <p>Nome</p>
+                <input id="nome_empresa" class="input_number" type="text"
+                    placeholder=" Insira o nome da sua empresa...">
+                <p>E-mail Empresarial</p>
+                <input id="email_empresa" class="input_number" type="text" placeholder=" ex: ThermoHolic@outlook.com">
+                <p>CNPJ</p>
+                <input id="cnpj_empresa" class="input_number" type="text" placeholder=" ex: XX. XXX. XXX/0001-XX. ">
+                <p>Telefone Comercial</p>
+                <input id="telefone_empresa" class="input_number" type="text" placeholder=" ex: xx xxxxx-xxxx">
+                <p>Senha</p>
+                <input id="senha_empresa" class="input_number" type="password" placeholder=" *******">
+                <span>Deve conter no mínimo 8 caracteres, números, 1 caracter especial e 1 letra maiúscula.</span>
+                <p>Confimar sua senha</p>
+                <input id="confirmar_senha" class="input_number" type="text" placeholder=" *******">
+                <div class="texto1">
+                    <span>Já tem uma conta? <a href="login.html">Faça Login</a></span>
+                </div>
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim do Banner -->
+    <div class="rodape">
+        <span id="contato">
+            <b>Fale Conosco</b>
+            <br>
+            ThermoHolic@outlook.com 
+            <br>
+            ThermoHolic.com.br
+        </span>
+        <div class="icons">
+            <a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.whatsapp.com"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        var email = email_empresa.value;
+        var nome = nome_empresa.value;
+        var cnpj = cnpj_empresa.value;
+        var telefone = telefone_empresa.value;
+        var senha = senha_empresa.value;
+        var confirmSenha = confirmar_senha.value;
+
+        if (email.indexOf("@") < 0 || email.indexOf(".") < 0) {
+            alert('Insira um e-mail válido!')
+        } else if (cnpj.indexOf("/0001") < 0 || cnpj.length != 14) {
+            alert('Insira um CNPJ válido!')
+        } else if (telefone.length != 11) {
+            alert('Insira um telefone válido!')
+        } else if (senha.length < 8) {
+            alert('Insira uma senha válida!')
+        } else if (confirmSenha != senha) {
+            alert('Confirme sua senha novamente.')
+        }
+    }
+</script>

@@ -1,0 +1,66 @@
+/*Menu*/
+.header-form {
+
+    width: 98%;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+
+}
+.header-form .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+}
+
+.navbar {
+    width: 700px;
+    display: flex;
+
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar li a:hover {
+    color: #FFC107;
+    transition: 0.5s;
+
+}
+
+/*Cadastro*/
+
+.texto-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+
+.containerlogin span {
+    width: 80%;
+    font-size: 12px;
+}
+
+.img-cadastro{
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+}
+
