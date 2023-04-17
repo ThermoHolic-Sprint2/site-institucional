@@ -42,6 +42,77 @@
 
 } 
 
+/*Calculadora*/ 
+
+.texto-calculadora {
+    width: 600px;
+}
+
+.card{
+    background-color: #ffffff;  
+    justify-content: space-around;
+    margin: 80px;  
+    text-align: center;
+    height: 100%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.containerforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+button{
+    background-color: #FFA700 ;
+    color: #ffffff;
+    width: 170px;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+button:hover{
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    background-color: #FFC107;
+    color: white;
+}
+button:active{
+    transform: translateY(4px);
+}
+.input_number{ 
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    height: 30px;
+    border-style: none;
+    background-color: #d9d9d987;
+    border-radius: 5px;
+} 
+
+.div {
+    margin: 20px;
+}
+
+.card h1 {
+    color: #AD8442;
+}
+
+
 /*Cadastro*/
 
 .texto-cadastro {
