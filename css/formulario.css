@@ -181,6 +181,10 @@ button:active{
     display: flex;
     margin-bottom: 30px;
 }
+
+.texto1 span {
+    width: fit-content;
+}
 .texto2{
     width: fit-content;
     margin-top: 30px;

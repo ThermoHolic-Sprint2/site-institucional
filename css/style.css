@@ -188,7 +188,7 @@ body {
 }
 
 .img-participantes {
-    width: 150px;
+    height: 140px;
     border-radius: 300px;
 }
 
@@ -213,7 +213,7 @@ body {
     background-color: white;
     padding: 40px;
     width: 20%;
-    height: 200px;
+    height: 300px;
     margin: 50px;
     border-radius: 20px;
 }
