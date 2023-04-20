@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - ThermoHolic</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Aqui colocamos o link para o arquivo de estilização-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> <!--Imagem da aa do navegador-->
+    <link rel="stylesheet" href="css/style.css"> <!--arquivo de estilização geral-->
+    <link rel="stylesheet" href="css/formulario.css"> <!--arquivo de estilização dos formularios-->
 </head>
 
 <body>
@@ -19,7 +18,7 @@
             <img class="logo" src="img/logo_thermoholic.png" alt="">
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#sobre-nos">Sobre Nós</a></li>
+                <li><a href="index.html#sobre-nos">Sobre Nós</a></li> <!--direcionamento para a pagina index na div #sobre-nos-->
                 <li><a href="index.html#participantes">Nossos Serviços</a></li>
                 <li><a href="calculadora.html">Simule Aqui</a></li>
                 <li><!--Espaço--></li>
@@ -30,10 +29,10 @@
             </ul>
         </div>
     </div>
-    <div class="form">
-        <div class="containerlogin">
-            <img class="img-cadastro" src="img/foto -cadastro.jpg" alt="">
-            <div class="texto-cadastro">
+    <div class="form"> <!--card do formulario-->
+        <div class="containerlogin"> <!--conteudo do cadastro (usamos a mesma estilização do login)-->
+            <img class="img-cadastro" src="img/foto -cadastro.jpg" alt=""> <!--imagem decorativa-->
+            <div class="texto-cadastro"> <!--formulario de cadastro-->
                 <h1>Cadastro</h1>
                 <h4>Dados da sua Empresa</h4>
                 <p>Nome</p>
@@ -55,9 +54,9 @@
                 <input id="cpf_admin" class="input_number" type="text" placeholder=" ex: xxx.xxx.xxx-xx">
                 <p>Senha</p>
                 <input id="senha_admin" class="input_number" type="password" placeholder=" *******">
-                <span>Deve conter no mínimo 8 caracteres, números e um '#'.</span>
+                <span>Deve conter no mínimo 8 caracteres e um '#'.</span>
                 <p>Confimar sua senha</p>
-                <input id="confirmar_senha" class="input_number" type="text" placeholder=" *******">
+                <input id="confirmar_senha" class="input_number" type="password" placeholder=" *******">
                 <div class="texto1">
                     <span>Já tem uma conta? <a href="login.html">Faça Login</a></span>
                 </div>
@@ -67,7 +66,7 @@
     </div>
 
     <!-- Fim do Banner -->
-    <div class="rodape">
+    <div class="rodape"> <!-- Área do rodape-->
         <span id="contato">
             <b>Fale Conosco</b>
             <br>
@@ -75,7 +74,7 @@
             <br>
             ThermoHolic.com.br
         </span>
-        <div class="icons">
+        <div class="icons"> <!-- links dos meios de contato-->
             <a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="Linkedin"></a>
             <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
             <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
@@ -89,6 +88,7 @@
 
 <script>
     function cadastrar() {
+        //declaração de variaveis
         var email_emp = email_empresa.value;
         var nome_emp = nome_empresa.value;
         var cnpj_emp = cnpj_empresa.value;
@@ -100,28 +100,28 @@
         var senha_adm = senha_admin.value;
         var confirmSenha = confirmar_senha.value;
 
-        if (email_emp.indexOf("@") < 0 || email_emp.indexOf(".") < 0 || email_adm.indexOf("@") < 0 || email_adm.indexOf(".") < 0) {
+        //validacoes
+        if (email_emp.indexOf("@") < 0 || // se o texto do input tem @
+          email_emp.indexOf(".") < 0 || // se o texto do input tem .
+          email_adm.indexOf("@") < 0 || 
+          email_adm.indexOf(".") < 0) { 
             alert('Insira um e-mail válido!') 
-        } else if (cnpj_emp.indexOf("/0001") < 0 || cnpj_emp.length != 14) {
+
+        } else if (cnpj_emp.indexOf("/0001") < 0 || // se o texto do input tem '/0001'
+                   cnpj_emp.length != 14) { // se o texto do input tem 14 caracteres  
             alert('Insira um CNPJ válido!')
-        } else if (cpf_adm.length != 11) {
+
+        } else if (cpf_adm.length != 11) { // se o texto do input tem 11 caracteres 
             alert('Insira um CPF válido!')
-        } else if (telefone_adm.length != 11) {
+
+        } else if (telefone_adm.length != 11) { // se o texto do input tem 11 caracteres 
             alert('Insira um telefone válido!')
-        } else if (senha_adm.length < 8 || 
-                    senha_adm.indexOf("0") < 0 || 
-                    senha_adm.indexOf("1") < 0 || 
-                    senha_adm.indexOf("2") < 0 || 
-                    senha_adm.indexOf("3") < 0 || 
-                    senha_adm.indexOf("4") < 0 || 
-                    senha_adm.indexOf("5") < 0 || 
-                    senha_adm.indexOf("6") < 0 || 
-                    senha_adm.indexOf("7") < 0 || 
-                    senha_adm.indexOf("8") < 0 || 
-                    senha_adm.indexOf("9") < 0 || 
-                    senha_adm.indexOf("#") < 0 ) {
+
+        } else if (senha_adm.length < 8 ||  // se o texto do input tem mais de 8 caracteres 
+                    senha_adm.indexOf("#") < 0 ) { // se o texto do input tem # (caracter especial)
             alert('Insira uma senha válida!')
-        } else if (confirmSenha != senha) {
+
+        } else if (confirmSenha != senha_adm) { // se o usuario confirmou a senha corretamente
             alert('Confirme sua senha novamente.')
         }
     }

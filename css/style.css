@@ -1,233 +1,237 @@
+/*importação de fonte do google fontes com varias especuras diferentes*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 body {
+    /*configurações do corpo inteiro das paginas*/
     background-color: #eaa638;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    font-family: 'Poppins', sans-serif; /*fonte importada*/
+    margin: 0; /*tirar as margens colocadas automaticamente*/
 }
 
 .container {
+    /*configuração da area de conteudo*/
     display: flex;
     width: 80%;
-    margin: auto;
+    margin: auto; /*quando o display é flex, a margem automatica deixa os elementos centralizados*/
 }
 
 /* Header*/
-
 .header {
-    position: fixed;
-    top: 0;
+    /*menu*/
+    position: fixed; /*fixa o menu na a parte superior da tela, assim quando rolar a página ele ainda fica visivel*/
+    top: 0; /*define que vai ser fixo na parte superior*/
     width: 98%;
     height: 100px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 20px; /*arredondamento da borda*/
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    justify-content: space-between; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    margin: 20px; /*margem do card */
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2); /*sombreamento do menu*/
 
 }
-
 .header .container {
+    /*configuração do conteudo do menu*/
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
-    width: 300px;
+    width: 300px; /*tamanho da imagem do logo*/
 }
-
 .navbar {
+    /*configuração da lista com links no menu*/
     width: 700px;
     display: flex;
-
-    list-style: none;
+    list-style: none; /*tira a estilização automatica da lista html */
     justify-content: space-evenly;
 
 }
-
 .navbar li a {
+     /*estilização dos links*/
     color: black;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
+    text-decoration: none; /*tira a estilização automatica do link (a href) do html*/
+    font-size: 18px; /*tamanho da fonte*/
+    font-weight: 600; /*grossura da fonte*/
 }
 .navbar li a:hover {
+    /*'animação' dos links, quando passar o mouse troca a cor em 0.5 segundos*/
     color: #FFC107;
     transition: 0.5s;
 
 }
 
 /*Banner*/
-
 .banner {
+    /*configuração da banner inicial do site*/
     margin-top: 170px;
 }
-
 .banner .container {
+    /*conteudo do banner*/
     justify-content: space-around;
 }
-
 .texto-banner {
+    /*bloco de texto do banner*/
     color: white;
-    width: 40%;
+    width: 40%; /*tamanho*/
 
 }
-
 .texto-banner p {
+    /*configuração apenas da tag p do bloco de texto do banner*/
     font-size: 30px;
 }
-
 .texto-banner h1 {
+    /*configuração apenas da tag h1 do bloco de texto do banner*/
     font-size: 40px;
 }
-
 .texto-banner p span {
-    font-weight: 700;
+    /*configuração apenas da tag span do bloco de texto do banner*/
+    font-weight: 700; 
 }
-
 .foto-banner {
+    /*configuração da imagem do banner*/
     width: 370px;
-    border-radius: 200px 200px 200px 200px;
+    border-radius:200px; 
     margin: 30px;
 }
-
 .botao-banner {
+    /*configuração do botão de fale conosco do banner*/
     background-color: white;
     font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 60px;
+    border: none; /*tira a estilização automatica do html*/
+    border-radius: 10px; 
+    padding: 10px 60px; /*espacamento dentro do botão*/
 
 }
-
 .botao-banner:hover {
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-    transition: background-color 0.2s;
+     /*'animação' do botão quando o mouse passar*/
+    background-color: white;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2); /*sombreamento: top right bottom left cor*/
+    transition: background-color 0.2s; /*tempo da transição da animação*/
 }
-
 .botao-banner a {
+    /*configuração do link do botão*/ 
     color: black;
-    text-decoration: none;
+    text-decoration: none; /*tira a estilização automatica do link do html*/
 }
-/*banner2*/
 
+/*banner2*/
 .banner2 .container {
+    /*configuração do banner 2 -Sobre o projeto*/
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     display: flex;
     background-color: rgb(255, 255, 255);
-    padding-bottom: 50px;
+    padding-bottom: 50px; /*espacamento dentro da div*/
 }
-
 .imagem-banner2 img{
+    /*configuração da imagem do banner 2 -Sobre o projeto*/
     width: 700px;
-    border-radius: 400px 0px 0px 400px;
-    margin: 20px 0px 20px 0px;
+    border-radius: 400px 0px 0px 400px; /*top right bottom left*/
+    margin: 20px 0px 20px 0px; /*top right bottom left*/
 }
-
 .botao-banner2 {
-    text-decoration: none;
+    /*configuração do link do banner 2 -Sobre o projeto*/
+    text-decoration: none; /*tira a estilização automatica do link do html*/
     color: #eaa638;
     font-size: 20px;
 }
 .botao-banner2:hover {
-    text-decoration: underline;
+     /*'animação' do link quando o mouse passar*/
+    text-decoration: underline; /*colocando o sublinhado no texto*/
 }
 
 /*Sobre Nos*/
 .sobre-nos .container {
+    /*configuração do conteudo do banner 3 -Sobre nos*/
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     display: flex;
     background-color: rgb(255, 255, 255);
 }
-
-
 .texto-sobre-nos h1{
-    text-align: center;
+    /*configuração do titulo do banner 3 -Sobre nos*/
+    text-align: center; /*alinha apenas textos*/
     
 }
 .container .imagem-sobre-nos img {
+    /*configuração da imagem do banner 3 -Sobre nos*/
     width: 500px;
-    border-radius: 0px 400px 400px 0px;
+    border-radius: 0px 400px 400px 0px; /*top right bottom left*/
     margin: 20px 0px 20px 0px;
 }
-
 .container .texto-sobre-nos {
+    /*configuração do bloco de texto do banner 3 -Sobre nos*/
     width: 65%;
-    margin: 10px 50px; /*10px - top/bottom 50px - left/right*/
+    margin: 10px 50px; /*top/bottom left/right*/
     font-family: Poppins;
     color: #3b280a;
-    font-style: normal;
+    font-style: normal; /*sem estilização na letra*/
     font-weight: 500; /*espeçura da letra*/
-    font-size: 18px; /*tam letra*/
+    font-size: 18px; /*tamanho letra*/
     line-height: 50px; /*espaçamento vertical entre as linhas do texto*/
-    text-align: justify;
+    text-align: justify; /*alinhamento do texto*/
 }
 
 /*Participantes*/
 .participantes .container {
+    /*configuração do conteudo do Participantes*/
     justify-content: space-evenly;
     width: auto;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /*alinha os itens da direita para a esquerda*/
     height: 300px;
 }
-
 .card-participantes {
+    /*configuração dos cards do Participantes*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*alinhando os textos em coluna*/
     width: 10%;
     height: 200px;
-    text-align: center;
+    text-align: center; /*alinha apenas textos para o centro*/
 }
-
 .img-participantes {
+    /*configuração das imagens do Participantes*/
     height: 140px;
-    border-radius: 300px;
+    border-radius: 300px; /*arredondamento das imagens*/
 }
-
 
 /*Nossos Serviços*/
 .nossos-servicos .container {
+    /*configuração do conteudo do Nossos Serviços*/
     background-color: #eaa638;
-}
-
-.nossos-servicos h1 {
-    color: white;
-}
-
-.nossos-servicos .container {
     justify-content: space-around;
     width: auto;
     align-items: center;
     flex-direction: row-reverse;
 }
-
+.nossos-servicos h1 {
+    /*configuração do titulo do Nossos Serviços*/
+    color: white;
+}
 .card-servicos {
+    /*configuração do card do Nossos Serviços*/
     background-color: white;
-    padding: 40px;
+    padding: 40px; /*espacamento dentro do card*/
     width: 20%;
     height: 300px;
     margin: 50px;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
-
 .card-servicos:hover {
+    /*'animação' do card quando o mouse passar*/
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-    transition: background-color 0.2s;
+    transition: 0.2s; /*transição para a imagem de 0.2 segundos*/
 }
-
 .card-servicos h4 {
+    /*configuração do titulo do card do Nossos Serviços*/
     color: #eaa638;
 }
-
 .card-servicos span {
+    /*configuração do span do card do Nossos Serviços*/
     width: 100px;
     text-align: center;
 }
@@ -235,15 +239,17 @@ body {
 /*rodape*/
 
 .background {
-    position: absolute;
+     /*configuração da div maior do Fale Conosco*/
+    position: absolute; /*tornando a posição absoluta*/
     width: 100%;
     height: 100%;
-    background-image: url(../img/imagem-cerveja.png);
-    background-size: cover;
+    background-image: url(../img/imagem-cerveja.png); /*colocando a imagem de background*/
+    background-size: cover; /*cobre toda a div*/
 }
 .conteudo {
-    position: absolute;
-    bottom: 0;
+    /*configuração da div menor do Fale Conosco*/
+    position: absolute; /*tornando a posição absoluta*/
+    bottom: 0; 
     width: 100%;
     height: 250px;
     background-color: #3B280AAB;
@@ -251,58 +257,59 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-
 .contato {
+    /*configuração da parte de contatos do Fale Conosco*/
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
-    font-weight: bold;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
+    font-weight: bold; /*espeçura da fonte*/
+    flex-direction: column; /*trocar o direcionamento de linear para coluna*/
+    align-items: center; /*apos virar coluna, se torna o alinhamento horizontal*/
+    justify-content: end; /*apos virar coluna, se torna o alinhamento vertical*/
     display: flex;
     margin-top: 200px;
 }
-
-
 .telefone {
-    font-size: 30px;
-    font-weight: normal;
+    /*configuração do texto telefone do Fale Conosco*/
+    font-size: 30px; 
+    font-weight: normal; /*espeçura da fonte*/
     margin: 10px;
 }
-
 .botao {
+    /*configuração do botão do Fale Conosco*/
     background-color: #FFA700;
     color: white;
-    font-weight: bold;
+    font-weight: bold; /*espeçura da fonte*/
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    border-radius: 20px;
+    text-decoration: none; /*tira a estilização automatica*/
+    border-radius: 20px; 
     padding: 30px 95px;
-    transition: background-color 0.3s ease;
 }
-
 .botao:hover {
+    /*'animação' do botao quando o mouse passar*/
     background-color: #FFC107;
+    transition: background-color 0.3s ease; /*tempo de transição */
 }
 .icons {
-    width: auto;
+    /*configuração dos icons do Fale Conosco*/
+    width: auto; /*centralizar*/
 }
 .icons img {
+    /*configuração das imagens de contato do Fale Conosco*/
     width: 50px;
     height: 50px;
     margin-top: 50px;
     margin-right: 40px;
 }
-
 .email {
+    /*configuração do email de contato do Fale Conosco*/
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
 
 }
-
 .email span {
+    /*configuração do email de contato do Fale Conosco*/
     display: block;
 }
