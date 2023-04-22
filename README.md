@@ -1,6 +1,6 @@
 # ThermoHolic - Site Institucional :beers:
 ## Bem-vindo(a) ao repositório do site institucional no GitHub! 
-![Captura de tela 2023-04-22 204457](https://user-images.githubusercontent.com/126488672/233812097-5d76870c-038e-4bda-8163-2b57c4a91a76.png)
+![Captura de tela 2023-04-22 204457](https://user-images.githubusercontent.com/126488672/233812107-8099e508-e239-4132-a3e1-f31c0d1ff87f.png)
 _______________________________________________________
 ## :beer: Descrição
 
