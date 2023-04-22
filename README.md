@@ -1,7 +1,7 @@
 # ThermoHolic - Site Institucional :beers:
 ## Bem-vindo(a) ao repositório do site institucional no GitHub! 
-![Captura de tela 2023-04-22 203150](https://user-images.githubusercontent.com/126488672/233811854-28230a84-9344-4477-a8de-275ac527a52a.png)
-__________________________________________________________________________________________________________________
+![Captura de tela 2023-04-22 204457](https://user-images.githubusercontent.com/126488672/233812097-5d76870c-038e-4bda-8163-2b57c4a91a76.png)
+_______________________________________________________
 ## :beer: Descrição
 
 Este é um repositório para um site institucional que inclui as páginas de início (index), tela de cadastro, tela de login e um simulador financeiro. O site é construído usando tecnologias web, incluindo HTML, CSS e JavaScript, e possui funcionalidades de validação de cadastro para garantir a integridade dos dados inseridos pelos usuários..
