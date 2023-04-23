@@ -129,30 +129,30 @@ button:hover{
 
 /*Cadastro*/
 
-.texto-cadastro {
+.texto-cadastro { /*formulario de cadastro*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
     margin: auto;
     width: 90%;
     height: 90%;
 }
 
-.containerlogin span {
+.containerlogin span { 
     width: 80%;
     font-size: 12px;
 }
 
-.img-cadastro{
-    width: 40%;
-    border-radius: 20px 0px 0px 20px;
+.img-cadastro{ 
+    width: 40%; /* largura*/
+    border-radius: 20px 0px 0px 20px;/*borda da imagem (top right bottom left)*/
 }
 
 /*Login*/
 
 .form{
-    /*card da area de login*/
+    /*card da area de login e cadastro*/
     margin: 100px 20% 50px 20%; /*tag unica que configura tds as margens (top right bottom left)*/
     width: 60%;
     border-radius: 20px;
@@ -160,9 +160,9 @@ button:hover{
     background-color: white;
 }
 .containerlogin {
-    /*conteudo do formulário de login */
+    /*conteudo do formulário de login e cadastro */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* os itens são distribuídos igualmente no espaço disponível ao redor deles */
 }
 .form .containerlogin .texto-login{
     /*configuração dos textos*/
